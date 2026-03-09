@@ -42,7 +42,7 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     line-height: 1.6;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
