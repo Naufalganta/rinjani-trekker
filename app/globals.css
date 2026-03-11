@@ -34,3 +34,8 @@ img {
     height: auto;
     display: block;
 }
+
+html,
+body {
+    height: 100%;
+}

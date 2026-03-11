@@ -1,10 +1,5 @@
 import "./globals.css";
-
-export const metadata = {
-  title: "Rinjani DedyTrekker",
-  description:
-    "Official Rinjani DedyTrekker - Professional trekking service to Mount Rinjani.",
-};
+import Navbar from "./components/Navbar";
 
 export default function RootLayout({
   children,
@@ -15,8 +10,27 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
+        <Navbar />
+
         {children}
 
+        {/* WHATSAPP BUTTON */}
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          className="wa-float"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="28"
+            height="28"
+            fill="white"
+          >
+            <path d="M16 2C8.28 2 2 8.28 2 16c0 2.55.68 4.94 1.85 7.02L2.5 29.5l6.63-1.33C11.13 29.35 13.5 30 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5c-2.14 0-4.18-.58-5.95-1.58l-.42-.25-4.05.81.82-3.95-.26-.44C5.12 20.3 4.5 18.2 4.5 16c0-6.35 5.15-11.5 11.5-11.5s11.5 5.15 11.5 11.5-5.15 11.5-11.5 11.5z"/>
+            <path d="M21.8 19.9c-.32-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.74.16-.22.32-.86 1.06-1.05 1.28-.19.22-.38.25-.7.09-.32-.16-1.35-.5-2.57-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.49.14-.65.15-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.74-1.79-1.01-2.45-.26-.65-.53-.56-.74-.57h-.63c-.22 0-.58.08-.88.4-.3.32-1.16 1.13-1.16 2.76 0 1.63 1.19 3.2 1.35 3.42.16.22 2.34 3.58 5.67 5.02 2.17.94 3.01.94 4.09.8 1.18-.16 2.53-1.03 2.89-2.03.36-1 .36-1.86.25-2.03-.11-.17-.4-.27-.72-.43z"/>
+          </svg>
+        </a>
       </body>
     </html>
   );
